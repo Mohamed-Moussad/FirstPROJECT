@@ -27,3 +27,7 @@ with col3:
 
 fig = px.scatter(df,x=x_col,y=y_col,color = Color)
 st.plotly_chart(fig)
+
+x=st.selectbox('choose x column',num_col)
+fig2=px.histogram(df,x=x)
+st.plotly_chart(fig2)
